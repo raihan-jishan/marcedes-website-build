@@ -1,0 +1,49 @@
+/* design the whole footer */
+.footer{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: var(--black);
+    color: #fff;
+    padding: 12px;
+    border-radius: 2rem;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.footerItem {
+    font-size: 1.2rem; 
+}
+.footerItem a{
+    color: #fff;
+}
+.footerItem i {
+    margin: 10px;
+}
+/* footerLogo */
+.footerLogo img {
+    width: 30%;
+    border-radius: 1rem;
+}
+.badge{
+    background-color: var(--black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-top-right-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+    color: #fff;   
+    font-weight: 200;
+}
+.badge h3{
+    font-weight: 300;
+}
+/* responsibe */
+@media screen and (max-width: 700px) {
+    .footer{
+        flex-direction: column;  
+    }
+    .badge{
+        padding: 20px;
+        border-top-right-radius: 3rem;
+        border-bottom-left-radius: 2rem;
+    }
+}

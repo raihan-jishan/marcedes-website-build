@@ -1,0 +1,124 @@
+/* design the navbar */
+.nav {
+  width: 100%;
+  height: 80px;
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px 50px;
+ background-color: var(--liteSilver);
+}
+.navlinks ul {
+  display: flex;
+}
+.navlinks ul li a {
+  display: block;
+  padding: 8px 15px;
+  transition: 0.2s;
+  margin: 0 5px;
+}
+.navlinks ul li a {
+  color: var(--black);
+  font-size: 1.4rem;
+  text-transform: capitalize;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+}
+/* logo */
+.logo a {
+  color: var(--black);
+}
+.logo .title {
+  font-size: 1.2rem;
+  font-weight: 600;
+  letter-spacing: 2px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+/* logo with img */
+.nav .logo img {
+  width: 20%;
+  border-radius: 2rem;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+ 
+/* on hover effects */
+.navlinks ul li a:hover {
+  border-bottom: 2px solid #000;
+  background-color: var(--liteSilver);
+  border-top-right-radius: 1rem;
+  border-top-left-radius: 1rem;
+  border-bottom-style: ridge;
+}
+/* hamburger */
+.hamburger {
+  display: none;
+}
+/* responsibe */
+@media only screen and (max-width: 1320px) {
+  .nav {
+    padding: 0 50px;
+  }
+  .navlinks.active {
+    height: 450px;
+    margin-top: 20px;
+ 
+  }
+}
+@media only screen and (max-width: 1100px) {
+  .nav {
+    padding: 0 30px;
+  }
+}
+@media only screen and (max-width: 900px) {
+  .hamburger {
+    display: block;
+    cursor: pointer;
+  }
+
+  .hamburger {
+    font-size: 2rem;
+  }
+  .hamburger .line {
+    width: 30px;
+    height: 3px;
+    background: #ffff;
+    margin: 6px 0;
+  }
+  .navlinks {
+    height: 0px;
+    position: absolute;
+    top: 80px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    background-color: #000;
+    transition: 0.2s;
+    overflow: hidden;
+  }
+  .navlinks ul {
+    display: block;
+    width: fit-content;
+    margin: 80px auto 0 auto;
+    text-align: center;
+    transition: 0.2s;
+    opacity: 0;
+  }
+  .navlinks.active {
+    height: 450px;
+    margin-top: 20px;
+    border-top-right-radius: 3rem;
+    border-bottom-left-radius: 3rem;
+    border-top: 1px solid var(--smartYellow);
+  }
+  .navlinks.active ul {
+    opacity: 1;
+  }
+  .navlinks ul li a {
+    margin-bottom: 12px;
+    color: #fff;
+  }
+  .themeBtn{
+    color: #fff;
+  }
+}

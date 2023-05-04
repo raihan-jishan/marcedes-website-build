@@ -1,0 +1,25 @@
+/* design the whole homepage  */
+.imageContainer {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-end;
+}
+.imageContainer img{
+    width: 45%;
+    border-top-right-radius: 1rem !important;
+    border-bottom-right-radius: 1rem !important;
+    border-radius: 0.5rem;
+    box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+}
+.title{
+    font-size: 1.5rem; 
+    margin: 0px;
+}
+/* responsibe */
+ @media screen and (max-width: 700px) {
+    .imageContainer img {
+        width: 80%;
+        margin: 40px;
+ 
+    }
+ }
