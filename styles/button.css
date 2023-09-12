@@ -1,0 +1,42 @@
+/* design the button related styling */
+.themeBtn {
+  border: 0;
+  background: transparent;
+  font-size: 1.7rem;
+  cursor: pointer;
+  margin: 4px;
+}
+.primaryBtn {
+  transition: 0.2s linear;
+  border: 0;
+  background-color: var(--smartYellow);
+  padding: 10px 25px;
+  font-size: 2rem;
+  border-radius: 2rem;
+}
+.primaryBtn:hover {
+  background: var(--HoversmartYellow);
+  cursor: pointer;
+  transform: scale(0.9);
+}
+.infoBtn {
+  border: 0;
+  background-color: var(--black);
+  color: #fff;
+  padding: 7px 15px;
+  font-size: 1.3rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/* responsibe */
+@media screen and (max-width: 700px) {
+  .btnCenter {
+    margin: 0;
+  }
+  .primaryBtn {
+    margin: 10px;
+    padding: 10px 50px;
+  }
+}

@@ -1,0 +1,52 @@
+/* design the rows page */
+.row {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    justify-content: space-around;
+}
+.rows {
+    max-width: 250px; 
+    transition: 0.4s;
+}
+/* row and rows image */
+.rows img {
+    width: 150%; 
+    object-fit: cover;
+    border-top-right-radius: 1rem !important;
+    border-radius: 0.5rem;
+    border-bottom-left-radius: 1rem !important;
+}
+.rows:hover{
+    transform: scale(0.9);
+}
+.row a{
+    color: var(--black);
+}
+/* rows-history */
+.rows-history{
+    margin: 20px;
+  
+}
+.row-History{
+    margin-top: 20px;
+}
+/* ownerPhoto */
+.ownerPhoto img{
+    width: 20%;
+    border-radius: 2rem;
+}
+/* responsibe */
+@media screen and (max-width: 700px) {
+    .row{
+        flex-direction: column;
+        width: 100%;
+    }
+  
+    .rows {
+        margin-top: 15px;
+    }
+     .rows img{
+       width: 120%;
+     }
+}
